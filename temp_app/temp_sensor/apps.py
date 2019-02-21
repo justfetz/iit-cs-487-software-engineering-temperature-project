@@ -2,4 +2,4 @@ from django.apps import AppConfig
 
 
 class TempSesensorConfig(AppConfig):
-    name = 'temp_sesensor'
+    name = 'temp_sensor'
