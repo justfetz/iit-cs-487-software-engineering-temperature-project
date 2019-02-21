@@ -48,6 +48,9 @@
   <hr>
   <h5>Software Engineering CS-487 IIT</h5>
   <h5>Professor Dennis Hood</h5>
+  <hr>
+  <h4><a href='https://github.com/jasonmfetzer/temp_app_487.git'>Repo</a></h4>
+
 <hr>
 <div>
 <h1>Context Model</h1>
@@ -71,7 +74,7 @@
     <li>The sensors in this case are the upper and lower bounds.  These are set by the user, if authorized. There is no authentication in the web app, other than the pseudocode that supports the front end capacity of this function. See index.html for the if user.is_authenticated function.</li>
   <li>Awareness is supported in two ways.  First there is listed history of changes from the user.  "List of Temp Changes."  Second, there is chart data to display only current or most recent values. This model also executes the average of all bounded temperatures</li>
   <li>If the user is authorized to change the temperature, they can do so, but only within their specified bounds.  "Change the Data" uses a form class to reevie this input.  If the input is out of bounds, the record will not update.</li>
-  <li>There is a Admin to the site, which can override a user.  I.e., to send updates to the codebase or change raw data if needed. An attachment of this file will be included in the submission summary.</li>
+  <li>There is a Admin to the site, which can override a user.  I.e., to send updates to the codebase or change raw data if needed. An attachment of this file is in the repo for this site.  The link is at the top of this page.</li>
 <li>The user interface would be a combination of the form submission and the chart data.</li>
 <li>Exception Handling is handled by validation errors for bad input. If there is a bad value, a validation error is raised on the back end, and that input is not saved to the model data.</li>
 <code>
