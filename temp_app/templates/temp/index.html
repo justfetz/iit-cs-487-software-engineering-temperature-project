@@ -29,23 +29,23 @@
       <li class="nav-item">
         <a class="nav-link" href="{% url 'list' %}">List of Temp Changes</a>
       </li>
-       <li class="nav-item">
+      <li class="nav-item">
         <a class="nav-link" href="{% url 'chartData' %}">JSON Data for Chart (REST)</a>
       </li>
       <li class="nav-item">
         <a class="nav-link" href="{% url 'forms' %}">Change the Data</a>
       </li>
-     
+      
       {% if user.is_authenticated %}
-    <li class="nav-item">
-<a class="nav-link" href="#">Logout</a>
-</li>
-  {% else %}
-<li class='nav-item'>
-      <a class="nav-link" href="">Login</a>
-    </li>
+      <li class="nav-item">
+        <a class="nav-link" href="#">Logout</a>
+      </li>
+      {% else %}
+      <li class='nav-item'>
+        <a class="nav-link" href="">Login</a>
+      </li>
 
-{% endif %}
+      {% endif %}
     </ul>
 
   </div>

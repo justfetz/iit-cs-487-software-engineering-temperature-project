@@ -14,11 +14,12 @@ class tempSensor(models.Model):
 	timeChanged = models.DateTimeField(default=timezone.now)
 
 	def validateBounds(value):
-		if value < self.currentTemp:
+		if (value < self.lowerBound or value > self.upperBound):
 			raise ValidationError(_('%(value)s is out of bounds'),
 				params={'value':value},
 				)
-	
+		else:
+			pass
 
 	def publishTime(self):
 		self.timeChanged = timezone.now()
